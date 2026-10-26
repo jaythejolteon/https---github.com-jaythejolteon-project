@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header class="site-header">
+        <h1>StudyTrack</h1>
+            <nav aria-label="Main navigation">
+                <a href="Home_Page.html">Dashboard</a>
+                <a href="Calender.html">Calendar</a>
+            </nav>
+    </header>
+
+    <main class="dashboard">
+        <section class="hero">
+            <p class="eyebrow">YOUR STUDENT PLANNER</p>
+            <h2>Stay ahead of every deadline.</h2>
+            <p>Check your assignment deadline and plan your study time.</p>
+        </section>
+
+        <section class="card" aria-labelledby="checker-title">
+            <h2 id="checker-title">Assignment Deadline Checker</h2>
+            <p>Enter your assignment details to check its urgency.</p>
+
+        <form id="deadline-form">
+            <label for="assignment-name">Assignment name</label>
+            <input
+                type="text"
+                id="assignment-name"
+                placeholder="e.g. History essay"
+                required
+            >
+
+            <label for="due-date">Due date</label>
+            <input type="date" id="due-date" required>
+
+            <button type="submit">Check my deadline</button>
+        </form>
+
+        <p id="deadline-result"
+            class="result"
+            role="status"
+            aria-live="polite">
+            Your deadline reminder will appear here.
+        </p>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+
+
+</body>
+</html>
